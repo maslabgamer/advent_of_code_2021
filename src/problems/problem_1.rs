@@ -37,7 +37,6 @@ mod tests {
         let input: Vec<i32> = include_str!("../../resources/problem_1_part_two_input.txt").lines()
             .map(|number| number.parse::<i32>().unwrap())
             .collect();
-
-        println!("{}", three_measurement_sliding_window(&input));
+        assert_eq!(1858, three_measurement_sliding_window(&input));
     }
 }
